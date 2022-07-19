@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Italiana&display=swap');
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Italiana', serif;
+}
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+  background-color: #f6f6f6;
+}
