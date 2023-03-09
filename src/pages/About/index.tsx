@@ -8,7 +8,7 @@ const images = [massa1, massa2];
 
 export default function About(){
     return(
-        <section>
+        <section className={styles.about}>
             <h1 className={stylesTema.title}>About</h1>
             <div className={styles.sobreNos}>
                 <img src={casa} alt='' />

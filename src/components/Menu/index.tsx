@@ -1,15 +1,15 @@
-import {ReactComponent as Logo} from "assets/images/logo.svg";
 import styles from './menu.module.scss';
 import {Link} from 'react-router-dom';
+import Logo from '../../assets/images/logo.svg';
 
 export default function Menu(){
     const rotas = [
         {
-        label: 'Inicio',
+        label: 'Home',
         to: '/'
         },
         {
-        label: 'Cardapio',
+        label: 'Menu',
         to: '/cardapio'
         },
         {
@@ -19,7 +19,7 @@ export default function Menu(){
     ];
     return(
         <nav className={styles.menu}>
-            <Logo />
+            <img src={Logo} />
             <ul className={styles.menu__list}>
                 {rotas.map((rota, index)=> (
                     <li key={index} className={styles.menu__link}>
