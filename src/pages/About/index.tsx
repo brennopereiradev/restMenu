@@ -1,23 +1,16 @@
 import styles from './about.module.scss';
-import stylesTema from 'styles/tema.module.scss';
-import casa from 'assets/images/casa.png';
-import massa1 from 'assets/images/massa1.png';
-import massa2 from 'assets/images/massa2.png';
+import house1 from 'assets/images/house1.jpg';
+import house2 from 'assets/images/house2.jpg';
+import house3 from 'assets/images/house3.jpg';
+import house4 from 'assets/images/house4.jpg';
+import house5 from 'assets/images/house5.jpg';
 
-const images = [massa1, massa2];
+const images = [house1, house2, house3, house4, house5];
 
 export default function About(){
     return(
         <section className={styles.about}>
-            <h1 className={stylesTema.title}>About</h1>
-            <div className={styles.sobreNos}>
-                <img src={casa} alt='' />
-                <div className={styles.sobreNos__texto}>
-                    <p>text 1</p>
-                    <p>text 2</p>
-                    <p>text 3</p>
-                </div>
-            </div>
+            <h1 className={styles.title1}>About</h1>
             <div className={styles.imagens}>
                 {images.map((imagem, index) =>(
                     <div key={index} className={styles.imagens__imagem}>
